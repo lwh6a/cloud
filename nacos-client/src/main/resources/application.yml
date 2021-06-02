@@ -1,0 +1,12 @@
+server:
+  port: 9090
+
+
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 123.56.17.228:8848
+  application:
+    name: order-nacos

@@ -1,0 +1,24 @@
+
+server:
+  port: 9030
+
+spring:
+  application:
+    name: lwh-order
+  main:
+    # 是否允许相同的bean定义存在,不同意则跑出异常,同意则后面的覆盖已存在的, spring默认为true, springboot默认没有值,所以为false
+    allow-bean-definition-overriding: true
+
+eureka:
+  client:
+    service-url:
+      #注册到eureka服务端的地址
+      defaultZone: http://root:123456@localhost:9000/eureka/
+#      defaultZone: http://root:123456@localhost:9000/eureka/,http://root:123456@127.0.0.1:9001/eureka/
+  instance:
+    #点击具体的微服务，右下角是否显示ip
+    prefer-ip-address: true
+    ip-address: ${spring.cloud.client.ip-address}
+    hostname: ${eureka.instance.ip-address}
+    instance-id: ${spring.application.name}:${eureka.instance.ip-address}:${server.port}
+

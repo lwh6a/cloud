@@ -1,0 +1,20 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    # 作为服务端不要把自己注册上去
+    register-with-eureka: false
+    # 不需要同步其他的节点
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:9000/eureka/
+
+
+spring:
+  security:
+    basic:
+      enable: true
+    user:
+      name: root
+      password: 123456

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.9.RELEASE</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lwh.cloud</groupId>
+    <artifactId>eureka-lwh</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>eureka-lwh</name>
+    <packaging>pom</packaging>
+    <modules>
+        <module>eureka-server</module>
+        <module>order-client</module>
+        <module>client-user</module>
+        <module>eurekaSale-server</module>
+        <module>nacos-client</module>
+        <module>orderSale-client</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+    <dependencyManagement>
+        <dependencies>
+
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-starter-web</artifactId>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-starter</artifactId>-->
+<!--            </dependency>-->
+
+            <!--spring-cloud-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!--lombok-->
+<!--            <dependency>-->
+<!--                <groupId>org.projectlombok</groupId>-->
+<!--                <artifactId>lombok</artifactId>-->
+<!--                <version>1.18.8</version>-->
+<!--                <scope>provided</scope>-->
+<!--            </dependency>-->
+            <!-- druid -->
+<!--            <dependency>-->
+<!--                <groupId>com.alibaba</groupId>-->
+<!--                <artifactId>druid</artifactId>-->
+<!--                <version>1.1.22</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; mybatis plus &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.baomidou</groupId>-->
+<!--                <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--                <version>3.0.7.1</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash;mybatis-plus-annotation&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.baomidou</groupId>-->
+<!--                <artifactId>mybatis-plus-annotation</artifactId>-->
+<!--                <version>3.0.7.1</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; sharding-jdbc &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.shardingsphere</groupId>-->
+<!--                <artifactId>sharding-jdbc-spring-boot-starter</artifactId>-->
+<!--                <version>4.1.1</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; xxl-job &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.xuxueli</groupId>-->
+<!--                <artifactId>xxl-job-core</artifactId>-->
+<!--                <version>2.2.0</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; apollo &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.ctrip.framework.apollo</groupId>-->
+<!--                <artifactId>apollo-client</artifactId>-->
+<!--                <version>1.5.1</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; guava &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.google.guava</groupId>-->
+<!--                <artifactId>guava</artifactId>-->
+<!--                <version>19.0</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash;hutool&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>cn.hutool</groupId>-->
+<!--                <artifactId>hutool-all</artifactId>-->
+<!--                <version>4.6.10</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash;validation&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <artifactId>validation-api</artifactId>-->
+<!--                <groupId>javax.validation</groupId>-->
+<!--                <version>2.0.1.Final</version>-->
+<!--            </dependency>-->
+
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
